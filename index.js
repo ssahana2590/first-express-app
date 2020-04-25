@@ -7,7 +7,7 @@ app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => res.send('Hello World'));
 
-app.get('/java', (req, res) => res.send('<h1>Java</h1><p>Hello World</p>'));
+app.get('/java', (req, res) => res.send('<h1>Java</h1><p>Hello Java World</p>'));
 
 app.get('/contact', function (request, response) {
      response.sendFile(__dirname + '/contact.html');
@@ -30,6 +30,6 @@ app.get('/page', function (request, response) {
      response.render('home', { name: 'Sahana', technologies: ['html', 'css', 'nodejs', 'express', 'ejs'] });
 });
 
-app.listen(3000, function() {
+app.listen(3000, function () {
      console.log('Server is up and running.');
 });
